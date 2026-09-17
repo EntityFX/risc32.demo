@@ -12,8 +12,8 @@ MSTest-тесты и не входит в корневой `Besm6.sln`.
 Из корня репозитория:
 
 ```powershell
-dotnet run --project RISC32.Demo/RISC32.Demo
-dotnet test RISC32.Demo/RISC32.Demo.sln
+dotnet run --project src/RISC32.Demo
+dotnet test src/RISC32.Demo.sln
 ```
 
 Без аргументов выполняется рекурсивная программа `factorial(5)`. В выводе видны
@@ -28,8 +28,8 @@ FETCH → DECODE → EXECUTE → MEMORY → WRITEBACK
 Запуск внешней программы:
 
 ```powershell
-dotnet run --project RISC32.Demo/RISC32.Demo -- RISC32.Demo/examples/programs/02-loop-sum.asm --trace
-dotnet run --project RISC32.Demo/RISC32.Demo -- RISC32.Demo/examples/programs/03-memory.asm --dump 0 16
+dotnet run --project src/RISC32.Demo -- src/examples/programs/02-loop-sum.asm --trace
+dotnet run --project src/RISC32.Demo -- src/examples/programs/03-memory.asm --dump 0 16
 ```
 
 Параметры CLI:
